@@ -18,8 +18,11 @@ router.get('/api', (req, res) => {
 })
 
 const endpoint = [
-    'hero'
+    'hero',
+    'power'
 ]
+
+////////////+//////////////////
 
 endpoint.forEach(endpoint => {
     router.use(`/api/${endpoint}`, require(`./app/${endpoint}Routes`))

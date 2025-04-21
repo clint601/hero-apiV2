@@ -6,7 +6,20 @@ const heroDao = {
     ...require('./api/heroDao'), // this will import all the functions from heroDao
 }
 
+const powerDao = {
+    ...daoCommon,
+    ...require('./api/powerDao')
+}
+
+const speciesDao = {
+    ...daoCommon,
+    ...require('./api/speciesDao')
+}   
+
 
 module.exports = {
-    heroDao
+    heroDao,
+    powerDao,
+    speciesDao
+
 }
