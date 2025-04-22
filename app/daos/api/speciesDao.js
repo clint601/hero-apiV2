@@ -1,4 +1,4 @@
-const con = require('../../config/db');
+const con = require('../../config/dbconfig')
 
 const speciesDao = {
     table: 'species', // let it know what table I'm going to use
